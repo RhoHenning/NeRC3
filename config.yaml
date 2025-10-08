@@ -1,0 +1,74 @@
+dataset_dir: ./dataset/8iVFB/longdress/
+exp_dir: ./exp/longdress/l1t1/
+method: nerc3
+sequence: longdress_vox10
+num_frames: 1
+start_frame: 1051
+group_size: 1
+encode_diff: False
+
+num_nodes: 3
+fix_start: False
+fix_end: False
+depth: 10
+block_depth: 5
+knn: 1
+
+# nerc3
+geometry:
+  num_freqs: 12
+  temp_freqs: 4
+  block_dim: 512
+  hidden_dim: 128
+  num_blocks: 2
+  layer_norm: True
+  short_cut: True
+  sine_freq: 0
+  batch_size: 4096
+  train_steps: 1200000
+  lr: 0.001
+  weight_decay: 0.0001
+  scheduler_steps: 4
+  gamma: 0.1
+  lmbda: 1.0
+  occupied_ratio: 0.5
+  check_interval: 5000
+  quantization_steps: 1024
+  finetune_steps: 16
+attribute:
+  num_freqs: 12
+  temp_freqs: 4
+  block_dim: 512
+  hidden_dim: 128
+  num_blocks: 3
+  layer_norm: True
+  short_cut: True
+  sine_freq: 64
+  batch_size: 4096
+  train_steps: 800000
+  lr: 0.001
+  weight_decay: 0.0001
+  scheduler_steps: 4
+  gamma: 0.1
+  lmbda: 1.0
+  check_interval: 5000
+  quantization_steps: 4096
+
+# tmc2
+tmc2_bin_dir: /home/ubuntu/mpeg-pcc-tmc2-release-v25.0/bin/
+tmc2_config_dir: /home/ubuntu/mpeg-pcc-tmc2-release-v25.0/cfg/
+hdrtools_bin_dir: /home/ubuntu/HDRTools-v0.24/build/bin/
+condition: all-intra
+geom_qp: 20
+attr_qp: 32
+
+# tmc3
+tmc3_path: ./tmc3
+coding: trisoup
+pqs: 0.25
+node_size_log2: 4
+qp: 34
+
+# evaluator
+pc_error_path: ./pc_error
+pcqm_dir: /home/ubuntu/PCQM/build/
