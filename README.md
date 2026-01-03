@@ -1,6 +1,6 @@
 # NeRC<sup>3</sup>: Implicit Neural Representations for Colored Point Cloud Compression
 
-Official implementation of paper [Implicit Neural Compression of Point Clouds](https://arxiv.org/abs/2412.10433).
+Official implementation of paper [Implicit Neural Compression of Point Clouds](https://ieeexplore.ieee.org/document/11322701), accepted by IEEE Transactions on Image Processing.
 
 ## Requirements
 
@@ -91,10 +91,11 @@ python main.py --config_path=./config.yaml --encode_colors --modification exp_di
 If you find this work helpful in your research, please cite as follows:
 
 ```
-@article{ruan2024nerc3,
+@article{ruan2025nerc3,
   title={Implicit Neural Compression of Point Clouds},
   author={Ruan, Hongning and Shao, Yulin and Yang, Qianqian and Zhao, Liang and Zhang, Zhaoyang and Niyato, Dusit},
-  journal={arXiv preprint arXiv:2412.10433},
-  year={2024}
+  journal={IEEE Transactions on Image Processing},
+  year={2025},
+  doi={10.1109/TIP.2025.3648141}
 }
 ```
