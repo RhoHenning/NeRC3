@@ -95,7 +95,10 @@ If you find this work helpful in your research, please cite as follows:
   title={Implicit Neural Compression of Point Clouds},
   author={Ruan, Hongning and Shao, Yulin and Yang, Qianqian and Zhao, Liang and Zhang, Zhaoyang and Niyato, Dusit},
   journal={IEEE Transactions on Image Processing},
-  year={2025},
+  volume={35},
+  number={},
+  pages={260-275},
+  year={2026},
   doi={10.1109/TIP.2025.3648141}
 }
 ```
